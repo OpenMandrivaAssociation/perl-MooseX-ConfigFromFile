@@ -15,6 +15,7 @@ BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Types::Path::Class)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Fatal)
+BuildRequires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
