@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    An abstract Moose role for setting attributes from a configfile
 License:    GPL+ or Artistic
@@ -16,6 +16,7 @@ BuildRequires: perl(MooseX::Types::Path::Class)
 BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::Fatal)
 BuildRequires: perl(namespace::autoclean)
+Requires: perl(namespace::autoclean)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
