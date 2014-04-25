@@ -1,11 +1,12 @@
 %define upstream_name    MooseX-ConfigFromFile
-%define upstream_version 0.03
+%define upstream_version 0.13
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	An abstract Moose role for setting attributes from a configfile
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -51,23 +52,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.30.0-3mdv2011.0
-+ Revision: 653975
-- add requires
 
-* Sun Apr 17 2011 Funda Wang <fwang@mandriva.org> 0.30.0-2
-+ Revision: 653971
-- rebuild
-
-* Sat Dec 18 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.30.0-1mdv2011.0
-+ Revision: 622897
-- update to new version 0.03
-
-* Tue Nov 17 2009 Jérôme Quelin <jquelin@mandriva.org> 0.20.0-1mdv2011.0
-+ Revision: 466791
-- import perl-MooseX-ConfigFromFile
-
-
-* Tue Nov 17 2009 cpan2dist 0.02-1mdv
-- initial mdv release, generated with cpan2dist

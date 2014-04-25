@@ -1,2 +1,4 @@
+removed_sources:
+  MooseX-ConfigFromFile-0.03.tar.gz: 6af84878d9443be07df88787d0d8b4b6090df85a
 sources:
-  "MooseX-ConfigFromFile-0.03.tar.gz": 6af84878d9443be07df88787d0d8b4b6090df85a
+  MooseX-ConfigFromFile-0.13.tar.gz: a7d7a52f1574bc5804812d6c0049044767023b30
