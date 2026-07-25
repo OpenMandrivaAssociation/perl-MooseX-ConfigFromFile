@@ -1,15 +1,15 @@
 %define upstream_name    MooseX-ConfigFromFile
-%define upstream_version 0.03
+%define upstream_version 0.14
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	An abstract Moose role for setting attributes from a configfile
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/MooseX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/moose/MooseX-ConfigFromFile
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-ConfigFromFile-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
