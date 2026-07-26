@@ -1,15 +1,13 @@
 %define upstream_name    MooseX-ConfigFromFile
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.14
+Release:	2
 
 Summary:	An abstract Moose role for setting attributes from a configfile
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/moose/MooseX-ConfigFromFile
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-ConfigFromFile-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/MooseX-ConfigFromFile-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -35,7 +33,7 @@ Attributes specified directly as arguments to 'new_with_config' supercede
 those in the configfile.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
